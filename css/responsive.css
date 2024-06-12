@@ -1229,6 +1229,11 @@ p {
 	font-size: 14px;
 	}
 
+.message__title {
+	margin: 0 0 10px;
+	font-size: 26px;
+	}
+
 .footer__right-col {
 	flex-wrap: wrap;
 	justify-content: center;
