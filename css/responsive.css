@@ -869,6 +869,7 @@
 	}
 
 .hero-section__sub-title {
+	max-width: 215px;
 	font-size: 12px;
 	line-height: 18px;
 	}
