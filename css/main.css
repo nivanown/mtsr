@@ -760,6 +760,14 @@ textarea::-webkit-input-placeholder {
   padding: 0;
   }
 
+.hero-slider.swiper {
+  height: 100% !important;
+  }
+
+ .hero-slider .swiper-wrapper {
+  align-items: inherit !important;
+  }
+
 .hero-slider .swiper-button-prev {
   left: 30px;
   }
@@ -850,6 +858,7 @@ textarea::-webkit-input-placeholder {
   flex-direction: column;
   justify-content: center;
   padding: 130px 0 240px;
+  height: 100%;
   color: var(--quaternary-text-color);
   background: url(../img/src/hero-img.jpg) center no-repeat;
   background-size: cover;
