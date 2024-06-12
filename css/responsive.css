@@ -691,6 +691,14 @@
   line-height: 18px;
 	}
 
+.phone-number {
+	gap: 0 5px;
+	}
+
+.phone-number__icon {
+	width: 18px;
+	}
+
 .phone-number__text {
 	font-size: 12px;
   line-height: 18px;
