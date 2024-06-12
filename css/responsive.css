@@ -691,6 +691,11 @@
   line-height: 18px;
 	}
 
+.phone-number__text {
+	font-size: 12px;
+  line-height: 18px;
+	}
+
 .messengers__item {
 	width: 16px;
 	height: 16px;
