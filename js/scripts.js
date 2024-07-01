@@ -11,10 +11,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 /*- hero-slider -*/
 var swiper = new Swiper('.hero-slider', {
-  autoplay: {
+  centeredSlides: true,
+  autoplay: false,
+  /*autoplay: {
     delay: 5500,
     disableOnInteraction: false,
-  },
+  },*/
   autoHeight: true,
   loop: true,
   speed: 1000,
@@ -195,4 +197,30 @@ $('.m-overlay').click(function(e) {
   $('.m-overlay').removeClass('show');
   $('.header__nav-col').removeClass('show');
   $('body').removeClass('scroll-none');
+});
+
+/*- mobile-menu -*/
+document.querySelector('.support__main-icon').addEventListener('click', function() {
+  var content = document.querySelector('.support__dropdown');
+  if (content.classList.contains('show')) {
+    content.classList.remove('show');
+    this.classList.remove('active');
+    //this.textContent = 'Открыть блок';
+  } else {
+    content.classList.add('show');
+    this.classList.add('active');
+    //this.textContent = 'Закрыть блок';
+  }
+});
+
+document.addEventListener('click', function(event) {
+  var button = document.querySelector('.support__main-icon');
+  var content = document.querySelector('.support__dropdown');
+  if (!button.contains(event.target) && !content.contains(event.target)) {
+    if (content.classList.contains('show')) {
+      content.classList.remove('show');
+      button.classList.remove('active');
+      //button.textContent = 'Открыть блок';
+    }
+  }
 });
