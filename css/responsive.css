@@ -263,7 +263,7 @@
 	}
 
 .news__description {
-	padding: 25px;
+	padding: 25px 25px 87px;
 	}
 
 .message__in {
@@ -1351,6 +1351,10 @@ p {
 
 .news__description {
 	padding: 20px;
+	}
+
+.news__item .btn {
+	position: static;
 	}
 
 .gallery {
